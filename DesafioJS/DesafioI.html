@@ -1,0 +1,78 @@
+<!--Faça um script que receba uma data no formato “dd/mm/aaaa” e escreva a
+data por extenso. Dica: use a função “split” de uma string que quebra a string
+em pedaços dado um separador como argumento da função. Nesse caso, o
+separador é a barra (/) da data.
+Exemplo:
+Para a entrada “22/04/1983” deve ser escrito “22 de abril de 1983”.-->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Isadora">
+    <title>Recebendo data de nascimento</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      //window.alert('Mensagem')
+      //window.confirm('Está gostando de JS?')//Janela com botões OK or CANCEL
+      var nome = window.prompt('Olá. Qual é o seu nome?')//Janela que pergunta
+      window.alert(`Que nome bonito, ${nome}!`)//Um dos modos de fazer concatenação em JS
+      var dataNascimento = window.prompt('Agora, por favor, me informe sua data de nascimento no formato dd/mm/aaaa')
+      var dataNascimentoExtenso = dataNascimento.split("/",3)
+
+      console.log(dataNascimentoExtenso)
+
+      for(var i=0; i<dataNascimentoExtenso.length;i++){
+        dataNascimentoExtenso[i] = parseInt(dataNascimentoExtenso[i])
+      }
+      var mes;
+      switch (dataNascimentoExtenso[1]) {
+        case 01:
+          mes = "janeiro"
+          break;
+        case 02:
+          mes = "fevereiro"
+          break;
+        case 03:
+          mes = "março"
+          break;
+        case 04:
+          mes = "abril"
+          break;
+        case 05:
+          mes = "maio"
+          break;
+        case 06:
+          mes = "junho"
+          break;
+        case 07:
+          mes = "julho"
+          break;
+        case 08:
+          mes = "agosto"
+          break;
+        case 09:
+          mes = "setembro"
+          break;
+        case 10:
+          mes = "outubro"
+          break;
+        case 11:
+          mes = "novembro"
+          break;
+        case 12:
+          mes = "dezembro"
+          break;
+        default:
+          mes = "invalido"
+          break;
+      }
+
+      if(mes=="invalido"){
+        window.confirm(`Que massa, ${nome}. Eu adoraria ir no seu aniversário dia ${dataNascimentoExtenso[0]}, no mês ${mes}! Com certeza, o ano de seu nascimento em ${dataNascimentoExtenso[2]} foi maravilhoso por ter recebido você ao mundo.`)
+      }else{
+        window.confirm(`Que massa, ${nome}. Eu adoraria ir no seu aniversário dia ${dataNascimentoExtenso[0]}, no mês de ${mes}! Com certeza, o ano de seu nascimento em ${dataNascimentoExtenso[2]} foi maravilhoso por ter recebido você ao mundo.`)
+      }
+    </script>
+  </body>
+</html>

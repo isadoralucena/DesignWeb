@@ -1,0 +1,104 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.parteEsquerda img{
+  position: absolute;
+  width: 50%;
+  height: 100%;
+}
+* input:focus-visible{
+  outline: none;
+}
+.login, .inscricao{
+  width: 450px;
+  position: absolute;
+  left: 75%;
+  transform: translateX(-50%);
+}
+.login{
+  top: 7px;
+}
+.inscricao{
+  top: 30%;
+}
+.login .entrada *{
+  display: inline;
+}
+.entrada1, .entrada2{
+  height: 35px;
+  margin-right: 10px;
+  background-color: #f5f8fa;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding-left: 5px;
+}
+.entrada1{
+  border-bottom-color: #1da1f2;
+}
+.entrada2{
+  border-bottom-color: #7a8790;
+}
+.entrada1::placeholder {
+  color:  #1da1f2;
+  font-size: 7pt;
+  text-align: left;
+  transform: translateY(-10px);
+}
+.entrada2::placeholder {
+  color:  #7a8790;
+  font-size: 7pt;
+  text-align: left;
+  transform: translateY(-10px);
+}
+.login .botao1{
+  border-radius: 10px;
+  border: 1px solid #1da1f2;
+  color: #1da1f2;
+  background-color: white;
+  width: 50px;
+  height: 27px;
+}
+.login .botao1:hover, .botao3:hover{
+  background-color: #Eaecec;
+}
+.login a{
+  margin-top: 7px;
+  margin-left: 185px;
+  text-decoration: none;
+  color: #1da1f2;
+  font-size: 8pt;
+}
+.login a:hover{
+  color: black;
+  text-decoration: underline;
+}
+.inscricao img{
+  width: 7%;
+}
+.botao2, .botao3{
+  margin-top: 10px;
+  border-radius: 10px;
+  display: block;
+  height: 30px;
+  width: 50%;
+}
+.inscricao h2{
+  width: 60%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.botao2{
+  border: none;
+  color: white;
+  background-color: #1da1f2;
+}
+.botao2:hover{
+  background-color: #1781c2;
+}
+.botao3{
+  color: #1da1f2;
+  background-color: white;
+  border: 1px solid #1da1f2;
+}

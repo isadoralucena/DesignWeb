@@ -1,0 +1,27 @@
+.menu{
+  list-style: none;/*Estilo da lista*/
+  margin: 0;/* Espaço entre a primeira lista e a suas sublistas. No caso, a distância é 0*/
+  padding: 0;/*Distancia dos elementos para a borda */
+  width: 150px;
+  background-color: red;
+}
+.submenu{
+  background-color: black;
+  color: white;
+  position: absolute;/*Ele vai tomar como referencia o menu pai, que precisa ser diferente de estático*/
+  left: 150px;
+  top: 0;
+  display: none;/*Submenu some, fica invisível*/
+}
+.opcao_principal{
+  position: relative;/*por padrão é estatico, e para ser ancestral do submenu, precisa ser diferente de estatico. No caso, ele está sendo relative: não altera sua posição, é como se fosse estático*/
+}
+.opcao_principal:hover{/*lê-se da direita pra esquerda*/
+  background-color: green;
+}
+.opcao_principal:hover .submenu{/*Todo submenu dentro de opcao_principal com mouse em cima*/
+  display:block;/*Aparecer*/
+}
+.opcao_secundaria:hover{
+  background-color: orange;
+}

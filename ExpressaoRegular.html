@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript">
+      var minha_expressao = /a/ig;
+      var minha_string = 'Oi, sou uma variável do tipo string. n ' + 'Sei que tenho um valor';
+      var resultado = minha_expressao.exec( minha_string );//resultado vai receber oq o método exec retornar (ele retorna um vetor)
+      document.write('Encontrei o valor: ' + resultado[0] + '<br>');
+      while (resultado) {//se eu n coloco nenhuma condição, o while no js vai verificar se variável é nula (se for nula nula, n entra no while)
+        document.write( 'Posição: ' + resultado.index + '<br>' );//aqui encontra o primeiro a
+        resultado = minha_expressao.exec( minha_string );//aqui vai atrás do próximo a, se tiver
+      }
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

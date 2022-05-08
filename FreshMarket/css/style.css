@@ -1,0 +1,404 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+* img:not(.header img){
+  filter: grayscale(50%);
+  filter: brightness(50%);
+}
+*h1, *h2{
+  font-family: 'Staatliches', cursive;
+}
+*p{
+  font-family: 'Playfair Display', serif;
+}
+.elementoTransparente{
+  opacity: 0;
+}
+.elementoTransparenteNovo{
+  opacity: 0;
+}
+.elementoTransparenteNovoNovo{
+  opacity: 0;
+}
+.botaoPrincipal{
+  border: none;
+  height: 50px;
+  background-color: #006400;
+  color: white;
+  width: 10%;
+}
+.conteiner{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: 
+  "header"
+  "main"
+  "footer"
+  "detalheAbaixoFooter";
+}
+.footer{
+  padding-top: 40px;
+  padding-bottom: 100px;
+  grid-area: footer;
+  background-color: #29ad48;
+  display: grid;
+  grid-template-areas: 
+  "atendimento endereco redesSociais pagamento funcionamento";
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto;
+  padding-left: 10%;
+  gap: 3%;
+  padding-right: 10%;
+}
+.detalheAbaixoFooter{
+  grid-area: detalheAbaixoFooter;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: #1d7f32;
+}
+.p1{
+  float: left;
+}
+.p2{
+  float: right;
+}
+.conteinerSobreNos{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: 
+  "header header"
+  "main1 texto1"
+  "texto2 main2"
+  "footer footer"
+  "detalheAbaixoFooter detalheAbaixoFooter";
+}
+.textInMain h1{
+  font-size: 48pt;
+}
+.textInMain p{
+  margin-top: 10px;
+  font-size: 18pt;
+  text-align: justify;
+}
+.main1{
+  margin-top: 110px;
+  grid-area: main1;
+}
+.main1 img{
+  width: 100%;
+  height: 100%;
+}
+.texto1{
+  margin-top: 110px;
+  grid-area: texto1;
+}
+.texto1 p{
+  margin-top: 35%;
+  transform: translateY(-50%);
+}
+.texto1{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.main2{
+  grid-area: main2;
+}
+.main2 img{
+  width: 100%;
+  height: 100%;
+}
+.texto2{
+  grid-area: texto2;
+}
+.texto2 p{
+  margin-top: 35%;
+  transform: translateY(-50%);
+}
+.texto1, .texto2{
+  font-size: 18pt;
+  text-align: justify;
+}
+.texto2{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.map{
+  grid-area: map;
+  background-color: #ddd;
+}
+* input{
+  border: 1px solid gray;
+  /*padding-left: 5px;
+  padding-right: 5px;*/
+}
+* input:hover{
+  border: 1px solid black;
+}
+* input:focus-visible{
+  outline: none;
+}
+.conteinerContato{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: 
+  "header header"
+  "mainContato lateral"
+  "map map"
+  "footer footer"
+  "detalheAbaixoFooter detalheAbaixoFooter";
+}
+.mainContato{
+  margin-top: 110px;/*Altura do header, 70px + 20px + 20px*/
+  background-color: #FAEBD7;
+  grid-area: mainContato;
+  text-align: center;
+}
+.mainContato h2{
+  margin-top: 20px;
+}
+.lateral{
+  margin-top: 110px;/*Altura do header, 70px + 20px + 20px*/
+  background-color: #FAEBD7;
+  grid-area: lateral;
+}
+.mainContato, .lateral{
+  padding: 20px;
+  height: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.lateral button, .formularioInputMain button{
+  margin-top: 30px;
+  width: 35%;
+  height: 30px;
+  border-radius: 20px;
+  border: none;
+  background-color: #1d7f32;
+  color: white;
+}
+.lateral input, .formularioInputMain input{
+  margin-bottom: 15px;
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  height: 30px;
+}
+.lateral button:hover, .formularioInputMain button:hover{
+  color: white;
+  background-color: #033403;
+  transition: all 0.3s ease-out;
+}
+.header{
+  padding: 20px 0 20px;
+  width: 100%; 
+  z-index: 2;
+  position: fixed;
+  background-color: white;
+  grid-area: header;
+  -webkit-box-shadow: 0px 13px 15px 1px rgba(0,0,0,0.11); 
+  box-shadow: 0px 13px 15px 1px rgba(0,0,0,0.11);
+}
+.header nav ul li{
+  display: inline-block;
+  padding: 15px;
+  color: #1d7f32; 
+}
+.header ul{
+  margin-right: 10%;
+  float: right;
+}
+.header nav ul li:hover{
+  color: white;
+  background-color: #1d7f32;
+  transition: all 0.3s ease-out;
+}
+.header img{
+  margin-left: 10%;
+  float: left;
+  height: 70px;
+  width: 70px;
+}
+.main{
+  margin-top: 110px;/*Altura do header, 70px + 20px + 20px*/
+  grid-area: main;
+  width: 100%;
+}
+.main img{
+  height: 100%;
+  width: 100%;
+}
+.main .textInMain{
+  z-index: 1;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  color: white;
+}
+.marginGeral{
+  margin-right: 10%;
+  margin-left: 10%;
+}
+.atendimento{
+  grid-area: atendimento;
+}
+.endereco{
+  grid-area: endereco;
+}
+.redesSociais{
+  grid-area: redesSociais;
+}
+.pagamento{
+  grid-area: pagamento;
+}
+.funcionamento{
+  grid-area: funcionamento;
+}
+.formularioInput{
+  position: absolute;/*Vai se posicionar em relação ao pai diferente de estático, no caso, o body*/
+  left: 75%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.imagemFuncionarioLogin{
+  position: absolute;
+  width: 50%;
+  height: 100%;
+}
+.formularioInputMain{
+  padding: 45px;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 13px -3px #000000; 
+  box-shadow: 0px 0px 13px -3px #000000;
+}
+.formularioInput p{
+  margin-top: 15px;
+  color: white;
+  font-size: 15px;
+}
+.conteinerFuncionario{
+  display: grid;
+  position: absolute;
+  width: 80%;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 300px;
+  grid-column-gap: 100px;
+  transform: translate(-50%, 50%);
+  top: 10%;
+  left: 50%;
+}
+.caixa{
+  background-color: #8FBC8F;
+  display: block;
+  padding: 30px;
+  border: transparent; 
+  border-radius: 18px;
+  text-align: center;
+}
+.produtos{
+  background-color: #8FBC8F;
+  display: block;
+  padding: 30px;
+  border: transparent; 
+  border-radius: 18px;
+  text-align: center;
+}
+.users{
+  background-color: #8FBC8F;
+  display: block;
+  padding: 30px;
+  border: transparent; 
+  border-radius: 18px;
+  text-align: center;
+}
+.conteinerFuncionario i{
+  color: white;
+  margin-top: 60px;
+  margin-bottom: 15px;
+}
+.conteinerFuncionario h1{
+  margin-bottom: 15px;
+  font-family: monospace;
+  color: white;
+}
+.conteinerFuncionario button{
+  color: white;
+  font-family: monospace;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  background-color: #F4A460;
+  border: transparent; 
+  border-radius: 18px; 
+}
+.conteinerFuncionario button:hover{
+  background-color: #FFA500;
+}
+
+.conteinerAll{
+  display: grid;
+  grid-template-columns: 500px;
+  position: absolute;
+  transform: translate(-50%, 50%);
+  top: 10%;
+  left: 50%;
+  text-align: center;
+  padding: 30px;
+}
+.mainBox{
+  background-color: #8FBC8F;
+  display: block;
+  position: absolute;
+  padding: 60px;
+  border: transparent; 
+  border-radius: 18px;
+  text-align: center;
+}
+.mainBox i{
+  color: white;
+  margin-top: 60px;
+  margin-bottom: 15px;
+}
+.mainBox h1{
+  margin-bottom: 15px;
+  font-family: monospace;
+  color: white;
+}
+.mainBox button{
+  color: white;
+  font-family: monospace;
+  width: 100px;
+  height: 20px;
+  text-align: center;
+  background-color: #F4A460;
+  border: transparent;
+  margin-bottom: 10px;
+}
+.mainBox button:hover{
+  background-color: #FFA500;
+}
+.mainBox input{
+  height: 20px;
+  width: 100px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.mainBox table{
+  border: 1px;
+  background-color: #FFA500; 
+  border-color: black;
+  color: white;
+  margin-bottom: 10px;
+  width: 400px;
+}
+.mainBox p{
+  font-size: 14pt;
+  font-family: monospace;
+  color: white;
+}

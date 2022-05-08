@@ -1,0 +1,61 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+#all {
+	width: 850px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+#up {
+	width: 100%;
+}
+#down {
+	width: 100%;
+}
+#left {
+	width: 50%;
+	display: inline-block;
+}
+#right {
+	width: 50%;
+	display: inline-block;
+}
+#login {
+	border: solid 1px gray;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#forget {
+	border: solid 1px gray;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#app {
+	border: solid 1px gray;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.estilizado {
+	border:solid 1px #ccc;
+    border-radius: 4px;
+    width: 80%;
+    padding-top: 4px;
+    height: 45px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.botao {
+	background-color: blue;
+	color: white;
+	border:solid 1px #ccc;
+    border-radius: 4px;
+    width: 80%;
+    padding-top: 4px;
+    height: 45px;
+    display: block;
+    margin-bottom: 10px;
+}

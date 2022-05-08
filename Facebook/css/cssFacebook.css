@@ -1,0 +1,110 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.parteDeCima, .parteEscrita{
+  width: 700px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+* input:focus-visible{
+  outline: none;
+}
+html{
+  height: 100%;
+  background-color: #f0f2f5;
+}
+
+.esquerda{
+  position: absolute;
+  margin-left: 0%;
+  margin-right: 50%;
+}
+.direita{
+  position: relative;
+  margin-left: 55%;
+}
+.direitaLogin *{
+  display: block;
+}
+.direitaLogin{
+  background-color: white;
+  padding: 5px;
+  height: 255px;
+  width: 250px;
+  border-radius: 7px;
+  -webkit-box-shadow: 0px 0px 15px -6px rgba(0,0,0,0.63);
+  box-shadow: 0px 0px 15px -6px rgba(0,0,0,0.63);
+}
+.direitaLogin button, .direitaLogin input{
+  margin-top: 13px;
+  height: 35px;
+  border-radius: 5px;
+}
+.botao1{
+  border: none;
+  background-color: #1877f2;
+  color: white;
+  width: 95%;
+}
+.botao1:hover{
+  background-color: #135fc2;
+}
+.botao2{
+  width: 60%;
+  border: none;
+  background-color: #42b72a;
+  color: white;
+}
+.botao2:hover{
+  background-color: #045e04;
+}
+.entrada{
+  padding-left: 5px;
+  width: 95%;
+  border: 1px solid #d0d7df;
+}
+::placeholder {
+  color:  #d0d7df;
+}
+.direitaLogin a{
+    margin-top: 15px;
+    color: #92baf9;
+    font-size: 12px;
+    text-decoration: none;
+  }
+.direitaLogin a:hover{
+    text-decoration: underline;
+    color: black;
+}
+.direitaLogin hr{
+  border: 1px solid #d0d7df;
+  width: 95%;
+}
+.direita p{
+  margin-top: 10px;
+  font-size: 6pt;
+  font-family: Arial;
+}
+.esquerda p{
+  font-size: 14pt;
+  font-family: Arial;
+}
+.parteDeBaixo{
+background-color: white;
+position: absolute;
+bottom: -30%;
+width: 100%;
+height: 100px;
+color: gray;
+}
+.parteEscrita li{
+  display: inline;
+  margin-right: 20px;
+}
+.parteEscrita hr{
+  margin-top: 5px;
+  border: 1px solid #d0d7df;
+}

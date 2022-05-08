@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/cssCalculadora.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"></link>
+  </head>
+  <body>
+    <div class="calculadora">
+      <p class="resultado"></p>
+      <table>
+        <tr>
+          <td><button class="butao limpar" onclick="limparTudo()"style="width: 106px">AC</button></td>
+          <td><button class="butao limpar" onclick="backspace()"><i class="fas fa-backspace"></i></button></td>
+          <td><button class="butao operadoresMatematicos" onclick="inserir('/')"><i class="fas fa-divide"></i></button></td>
+        </tr>
+
+        <tr>
+          <td><button class="butao" onclick="inserir('7')">7</button></td>
+          <td><button class="butao" onclick="inserir('8')">8</button></td>
+          <td><button class="butao" onclick="inserir('9')">9</button></td>
+          <td><button class="butao operadoresMatematicos" onclick="inserir('*')">x</button></td>
+        </tr>
+
+        <tr>
+          <td><button class="butao" onclick="inserir('4')">4</button></td>
+          <td><button class="butao" onclick="inserir('5')">5</button></td>
+          <td><button class="butao" onclick="inserir('6')">6</button></td>
+          <td><button class="butao operadoresMatematicos" onclick="inserir('-')">-</button></td>
+        </tr>
+
+        <tr>
+          <td><button class="butao" onclick="inserir('1')">1</button></td>
+          <td><button class="butao" onclick="inserir('2')">2</button></td>
+          <td><button class="butao" onclick="inserir('3')">3</button></td>
+          <td><button class="butao operadoresMatematicos" onclick="inserir('+')">+</button></td>
+        </tr>
+
+        <tr>
+          <td><button class="butao" onclick="inserir('0')">0</button></td>
+          <td><button class="butao" onclick="inserir('.')">.</button></td>
+          <td><button class="butao igual" onclick="calcular()" style="width: 106px">=</button></td>
+        </tr>
+      </table>
+    </div>
+    <script src="script/scriptCalculadora.js"></script>
+  </body>
+</html>

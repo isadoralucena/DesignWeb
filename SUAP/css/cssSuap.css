@@ -1,0 +1,110 @@
+html{
+  background-image: linear-gradient(to bottom left, #3e3e3e, #7c7c7c);
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+* input:focus-visible{
+  outline: none;
+}
+.centro{
+  position: absolute;/*Vai se posicionar em relação ao pai diferente de estático, no caso, o body*/
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);/*Vai p esquerda 50% da tela (de acordo com a sua lateral esquerda), mas depois retorna 50% do seu tamanho*/
+}
+.centroPrincipal{
+  background-color: white;
+  border-radius: 5px;
+  color: gray;
+  padding: 50px;
+  width: 300px;
+  -webkit-box-shadow: 1px 0px 30px 0px rgba(48, 50, 50, 0.34);
+  -moz-box-shadow: 1px 0px 30px 0px rgba(48, 50, 50, 0.34);
+  box-shadow: 1px 0px 30px 0px rgba(48, 50, 50, 0.34);
+}
+.centroPrincipal *{/*Todo mundo dentro da class master terá display block*/
+  display: block;
+  width: 100%;
+}
+.centroPrincipal label, .centroPrincipal button{
+  margin-top: 15px;
+}
+.centroPrincipal button{
+  background-color: #2E8B57;
+  color: white;
+  border-radius: 10px;
+  border: none;
+}
+.centroPrincipal button:hover{
+  background-color: #20613c;
+}
+.centroPrincipal button, .centroPrincipal input{
+  height: 35px;
+}
+.centroPrincipal input{
+  padding-left: 5px;
+  width: 295px;/*width - padding-left*/
+}
+.centroPrincipal a{
+  margin-top: 15px;
+  color: green;
+  text-align: right;
+  font-size: 12px;
+  text-decoration: none;
+}
+.centroPrincipal a:hover{
+  text-decoration: underline;
+  color: black;
+}
+hr{
+  margin-top: 10px;
+  border: 1px solid #f8f8f8;
+}
+.credito{
+  margin-top: 20px;
+  color: gray;
+  text-align: center;
+}
+.lateralEsquerda{
+  background-color: #4a4a4a;
+  width: 27%;
+}
+.menu{
+  list-style: none;/*Para tirar os marcadores*/
+  margin-left: 28px;
+  margin-right: 28px;
+}
+.lateralEsquerda .imagemSUAP{
+  margin: 28px;
+}
+.lateralEsquerda .imagemIF{
+  margin-top: 28px;
+  margin-left: 27%;
+  margin-bottom: 28px;
+}
+.topicoMenu{
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #dad6d6;
+  text-transform: uppercase;
+  font-size: 17px;
+}
+.opcaoMenu{
+  color: white;
+  font-size: 15px;
+}
+i{
+  color: #868686;
+}
+.lateralEsquerda i, .opcaoMenu{
+  margin-top: 5px;
+}
+.lateralEsquerda hr{
+  border: 1px solid #2c2c2c;
+  margin-top: 5px;
+}
+.lateralEsquerda .opcaoMenu:hover,.lateralEsquerda i:hover{
+  color: #359830;
+}

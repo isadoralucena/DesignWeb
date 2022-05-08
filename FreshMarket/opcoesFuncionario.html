@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <script src="scripts/fakeDatabase.js" type="text/javascript"></script>
+    <script src="scripts/script.js" type="text/javascript"></script>
+    <script src="scripts/scriptVenda.js" type="text/javascript"></script>
+    <link href="css/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"></link>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body style="background-color: #29ad48" onload="usuario()">
+    <div class="header">
+        <img onclick="window.location.href='index.html'"src="imagens/Logo.png">
+        <nav>
+          <ul>
+            <li onclick="window.location.href='index.html'">Início</li>
+            <li>Sobre nós</li>
+            <li onclick="window.location.href='contato.html'">Contato</li>
+            <li onclick="window.location.href='loginFuncionario.html'">Login para funcionários</li>
+          </ul>
+        </nav>
+    </div>
+    <div class="conteinerFuncionario">
+      <div class="caixa">
+        <i class="fas fa-cash-register"></i>
+        <h1>Caixa</h1>
+        <button onclick="window.location.href='realizarVenda.html'">Venda</button>
+      </div>
+      
+      <div class="produtos">
+        <i class="fas fa-shopping-basket"></i>
+        <h1>Produtos</h1>
+        <button onclick="window.location.href='adicionarProduto.html'">Modificar</button>
+      </div>
+      
+      <div class="users">
+        <i class="fas fa-users"></i>
+        <h1>Usuarios</h1>
+        <button onclick="window.location.href='adicionarUsuario.html'">Modificar</button>
+      </div>
+
+    </div>
+  </body>
+</html>

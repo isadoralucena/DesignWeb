@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pou</title>
+    <script type="text/javascript">
+      function cumprimentar(){
+        alert("Olá, eu sou o pou");
+      }
+      function pergunta_nome(){
+        var nome = prompt("Qual é o seu nome?", "digite seu nome aqui");
+        alert("Oi, "+nome+", é um prazer te conhecer!");
+        var novaImagem = document.getElementById("pou");
+        novaImagem.src = "imagens/pouFeliz.png"//Mudando o src da imagem
+      }
+      cumprimentar();
+    </script>
+  </head>
+  <body>
+    <img id="pou" onclick="pergunta_nome()" src="imagens/pouTriste.jpg"><!--Onlick ocorre quando o usuário clica em um elemento-->
+  </body>
+</html>

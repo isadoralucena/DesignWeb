@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="scripts/fakeDatabase.js" type="text/javascript"></script>
+    <script src="scripts/script.js" type="text/javascript"></script>
+    <script src="scripts/scriptUsuario.js" type="text/javascript"></script>
+    <link href="css/style.css" rel="stylesheet"/>
+    <title></title>
+  </head>
+  <body style="background-color: #2E8B57" onload="mostrarUsuariosFakeDatabase()">
+    <div class="conteinerAll">
+        
+        <div class="mainBox">
+            <button onclick="transparenciaAdicionar()">Adicionar</button>
+            <input class="elementoTransparente" id="nome" placeholder="Nome">
+            <input class="elementoTransparente" id="idade" placeholder="Idade">
+            <input class="elementoTransparente" id="senha" placeholder="Senha">
+            <input class="elementoTransparente" id="username" placeholder="Username">
+            <button class="elementoTransparente" onclick="adicionarUsuario()">Confirmar</button>
+            <table border="1" id="tabelaUsuario">
+              <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Senha</th>
+                <th>Username</th>
+              </tr>
+            </table>
+            <button onclick="transparenciaRemover()">Remover</button>
+            <input class="elementoTransparenteNovo" placeholder="Username">
+            <button onclick="removerUser()" class="elementoTransparenteNovo">Confirmar</button>
+            
+            <button onclick="transparenciaEditar()">Editar</button>
+            <input id="UsernameNovo" class="elementoTransparenteNovoNovo" placeholder="Username">
+            <button class="elementoTransparenteNovoNovo" onclick="checagemDoUser()">Confirmar</button>
+
+            <input id="newName" class="elementoTransparenteNovoNovo" placeholder="Novo nome">
+            <input id="newAge"class="elementoTransparenteNovoNovo" placeholder="Nova idade">
+            <input id="newPass"class="elementoTransparenteNovoNovo" placeholder="Nova senha">
+            <input id="newUser"class="elementoTransparenteNovoNovo" placeholder="Novo User">
+            <button onclick="editarUsuario()" class="elementoTransparenteNovoNovo">Confirmar</button>
+        </div>
+    </div>
+
+  </body>
+</html>
